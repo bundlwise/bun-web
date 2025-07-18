@@ -2434,7 +2434,7 @@
 .Marquee_marquee__sPRJ7.Marquee_marqueeReverse__qZAgk
   .Marquee_marqueeGroup__vY44i {
   animation-delay: -3s;
-  animation-direction: reverse;
+  animation-direction:reverse;
 }
 @keyframes Marquee_scroll-x__O7ai3 {
   0% {
