@@ -1,0 +1,335 @@
+.SubscriptionIntervalPicker_picker__OUG7R,.SubscriptionIntervalPicker_wrapper__u1Xa4 {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.SubscriptionIntervalPicker_picker__OUG7R {
+    position: relative;
+    background: var(--Card-BG,linear-gradient(137deg,#111214 4.87%,#0c0d0f 75.88%));
+    border-top: 1px solid var(--Card-Border,hsla(0,0%,100%,.06));
+    border-right: 1px solid var(--Card-Border,hsla(0,0%,100%,.06));
+    border-left: 1px solid var(--Card-Border,hsla(0,0%,100%,.06));
+    border-radius: 9999px;
+    box-shadow: inset 0 1px 0 0 hsla(0,0%,100%,.1)
+}
+
+.SubscriptionIntervalPicker_picker__OUG7R input[type=radio] {
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity: 0
+}
+
+.SubscriptionIntervalPicker_picker__OUG7R input[type=radio]:checked+label {
+    color: #fff
+}
+
+.SubscriptionIntervalPicker_picker__OUG7R label {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-2) var(--spacing-4);
+    font-weight: 500;
+    color: var(--grey-200);
+    cursor: pointer;
+    border-radius: 16px;
+    transition: color .2s
+}
+
+.SubscriptionIntervalPicker_picker__OUG7R label.SubscriptionIntervalPicker_month__VKukf,.SubscriptionIntervalPicker_picker__OUG7R label.SubscriptionIntervalPicker_year__JYorx,.SubscriptionIntervalPicker_picker__OUG7R label:hover {
+    color: #fff
+}
+
+.SubscriptionIntervalPicker_picker__OUG7R .SubscriptionIntervalPicker_selectedBackdrop__oP7xR {
+    position: absolute;
+    inset: 4px 4px;
+    z-index: 0;
+    width: calc(50% - 8px);
+    height: calc(100% - 8px);
+    background: radial-gradient(51.07% 92.4% at 51% 7.61%,#5a5a5a 0,#1a1a1a 100%);
+    border-radius: 36px;
+    transition: transform .3s ease
+}
+
+.SubscriptionIntervalPicker_picker__OUG7R .SubscriptionIntervalPicker_selectedBackdrop__oP7xR:before {
+    position: absolute;
+    inset: -1px;
+    z-index: -1;
+    padding: 1px;
+    content: "";
+    background: linear-gradient(180deg,#fff,hsla(0,0%,100%,0));
+    border-radius: 36px;
+    opacity: .2;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude
+}
+
+.SubscriptionIntervalPicker_picker__OUG7R .SubscriptionIntervalPicker_selectedBackdrop__oP7xR.SubscriptionIntervalPicker_month__VKukf {
+    transform: translateZ(0)
+}
+
+.SubscriptionIntervalPicker_picker__OUG7R .SubscriptionIntervalPicker_selectedBackdrop__oP7xR.SubscriptionIntervalPicker_year__JYorx {
+    transform: translate3d(calc(100% + 8px),0,0)
+}
+
+.TeamsPricingInfo_container___H2AO {
+    position: relative;
+    padding: 0 24px
+}
+
+.TeamsPricingInfo_bgImg__yA15V {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none
+}
+
+.TeamsPricingInfo_bgImg__yA15V:before {
+    position: absolute;
+    left: 50%;
+    width: 1462px;
+    height: 1052px;
+    content: "";
+    background: url(../images/pricing-background.jpg);
+    filter: blur(20px);
+    background-repeat: no-repeat;
+    background-size: 1462px 1052px;
+    transform: translate3d(var(--translate-x),var(--translate-y),0);
+    --translate-x: -50%;
+    --translate-y: 25%
+}
+
+@media (min-width: 840px) {
+    .TeamsPricingInfo_bgImg__yA15V:before {
+        top:50%;
+        --translate-y: -50%
+    }
+}
+
+.TeamsPricingInfo_plans__nkRQJ {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+    justify-content: center;
+    margin: 40px 0 24px;
+    isolation: isolate
+}
+
+@media (min-width: 840px) {
+    .TeamsPricingInfo_plans__nkRQJ {
+        flex-direction:row;
+        gap: 0;
+        align-items: center;
+        margin: 40px 0 64px
+    }
+}
+
+.TeamsPricingInfo_plans__nkRQJ>div {
+    background: var(--grey-700);
+    box-shadow: inset 0 0 2px 2px rgba(0,0,0,.25);
+}
+
+.TeamsPricingInfo_freePlan__96qcf {
+    --plan-padding: 32px;
+    z-index: -1;
+    border-radius: 12px
+}
+
+@media (min-width: 840px) {
+    .TeamsPricingInfo_freePlan__96qcf {
+        border-radius:1em 0 0 1em;
+        --plan-padding: 40px
+    }
+}
+
+.TeamsPricingInfo_paidPlan__Bm_oJ {
+    --plan-padding: 32px;
+    --border: 2px;
+    position: relative;
+    background-clip: padding-box;
+    border: var(--border) solid transparent;
+    border-radius: var(--rounding-md);
+    box-shadow: 0 0 16px -7px rgba(154,170,255,.05),0 2px 40px 10px rgba(154,170,255,.05),inset 0 1px 1px 0 hsla(0,0%,100%,.1)
+}
+
+@media (min-width: 840px) {
+    .TeamsPricingInfo_paidPlan__Bm_oJ {
+        --plan-padding:48px
+    }
+}
+
+.TeamsPricingInfo_paidPlan__Bm_oJ>strong {
+    align-self: flex-start;
+    background: linear-gradient(100.41deg,#a041ff .52%,#b5a6ff 23.61%,#b6ccff 50%,#38a0d9 75%,#8df8ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.TeamsPricingInfo_paidPlan__Bm_oJ:before {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    margin: calc(-1 * var(--border));
+    content: "";
+    background: linear-gradient(100.41deg,rgba(5,45,255,.6) .52%,rgba(62,243,255,.6) 100.52%),linear-gradient(107.41deg,#ff3ef7 1.52%,#ff3ef7 30.69%,#051eff 75.02%,#051eff 101.52%),#fff;
+    border-radius: inherit;
+    box-shadow: 0 0 48px rgba(0,0,0,.6)
+}
+
+.TeamsPricingInfo_freePlan__96qcf,.TeamsPricingInfo_paidPlan__Bm_oJ {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: var(--plan-padding);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    color: var(--grey-200);
+    border: 1px solid hsla(0,0%,100%,.1)
+}
+
+.TeamsPricingInfo_freePlan__96qcf>strong,.TeamsPricingInfo_paidPlan__Bm_oJ>strong {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #fff
+}
+
+.TeamsPricingInfo_freePlan__96qcf>a,.TeamsPricingInfo_paidPlan__Bm_oJ>a {
+    min-width: 100%
+}
+
+.TeamsPricingInfo_freePlan__96qcf>hr,.TeamsPricingInfo_paidPlan__Bm_oJ>hr {
+    height: 1px;
+    margin: 24px calc(-1 * var(--plan-padding));
+    background: linear-gradient(90deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.2) 50%,hsla(0,0%,100%,0));
+    border: 0
+}
+
+.TeamsPricingInfo_perMonth__hJOE7 {
+    position: relative;
+    display: flex;
+    gap: 8px;
+    align-items: center
+}
+
+.TeamsPricingInfo_perMonth__hJOE7>strong {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #fff
+}
+
+.TeamsPricingInfo_annualPrice__MC7fD {
+    position: absolute;
+    bottom: -58px;
+    left: 50%;
+    padding: 0 8px;
+    text-align: center;
+    white-space: nowrap;
+    background: var(--grey-700);
+    transform: translateX(-50%)
+}
+
+.TeamsPricingInfo_discount__w6ANr {
+    padding: 4px 8px;
+    margin-left: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    color: var(--grey-900);
+    background-color: var(--blue-dark);
+    border-radius: 24px
+}
+
+.TeamsPricingInfo_featureList__PoKao {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px
+}
+
+.TeamsPricingInfo_paidPlan__Bm_oJ .TeamsPricingInfo_featureList__PoKao {
+    color: var(--blue-dark)
+}
+
+.TeamsPricingInfo_featureList__PoKao>li {
+    display: flex;
+    gap: 12px;
+    align-items: center
+}
+
+.TeamsPricingInfo_featureList__PoKao>li>i {
+    font-size: 24px
+}
+
+.TeamsPricingInfo_featureList__PoKao>li>a>span {
+    text-decoration: underline
+}
+
+.TeamsPricingInfo_enterpriseContainer__50W7O {
+    display: flex;
+    justify-content: center;
+    padding: 0 24px;
+    margin: 24px 0 108px
+}
+
+@media (min-width: 840px) {
+    .TeamsPricingInfo_enterpriseContainer__50W7O {
+        margin-bottom:72px
+    }
+}
+
+.TeamsPricingInfo_enterprise__iOpNl {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    color: hsla(0,0%,100%,.6);
+    letter-spacing: -.05px;
+    background-color: hsla(0,0%,100%,.05);
+    border-radius: var(--rounding-md);
+    box-shadow: inset 0 1px 0 0 hsla(0,0%,100%,.1);
+    transition: transform,background-color .1s ease-in-out
+}
+
+.TeamsPricingInfo_enterprise__iOpNl>strong {
+    display: inline-flex;
+    gap: 4px;
+    align-items: center;
+    color: #fff
+}
+
+.TeamsPricingInfo_enterprise__iOpNl i {
+    font-size: 16px
+}
+
+.TeamsPricingInfo_enterprise__iOpNl svg {
+    display: block;
+    transition: transform .2s
+}
+
+.TeamsPricingInfo_enterprise__iOpNl:hover svg {
+    transform: translateX(3px)
+}
+
+.TeamsPricingInfo_enterprise__iOpNl:hover {
+    background-color: hsla(0,0%,100%,.1)
+}
+
+.TeamsPricingInfo_enterprise__iOpNl:active {
+    transform: scale(.98)
+}
