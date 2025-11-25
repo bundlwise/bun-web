@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   if (!blurElement || !screenElement) return;
   
+  
   // Remove the active class initially
   blurElement.classList.remove('models_active__MnGVf');
   screenElement.classList.remove('models_active__MnGVf');
